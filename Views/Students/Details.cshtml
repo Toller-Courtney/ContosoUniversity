@@ -1,13 +1,13 @@
 ﻿@model ContosoUniversity.Models.Student
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Student Record Details";
 }
 
-<h1>Details</h1>
+<h1>Student Record Details</h1>
 
 <div>
-    <h4>Student</h4>
+    
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -53,6 +53,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.StudentID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to Students</a>
 </div>
